@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import axios from "axios";
 
-const SigninSection = () => {
+const SigninSection = ({ login }) => {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
     username: "",
@@ -23,28 +22,6 @@ const SigninSection = () => {
     if (!formData.username) newErrors.username = "Please enter your username";
     if (!formData.password) newErrors.password = "Please enter your password";
     setErrors(newErrors);
-
-    // if (Object.keys(newErrors).length === 0) {
-    //   try {
-    //     // Send user's input credentials to the JSON server for authentication
-    //     const response = await axios.post("http://localhost:3000/signinData", {
-    //       name: formData.username,
-    //       password: formData.password,
-    //     });
-
-    //     // Check if the authentication was successful
-    //     if (response.data.success) {
-    //       // Authentication successful, navigate to the welcome page
-    //       navigate("/welcome");
-    //     } else {
-    //       // Authentication failed, display an error message
-    //       alert("Invalid username or password");
-    //     }
-    //   } catch (error) {
-    //     // Handle any errors
-    //     console.error("Error:", error);
-    //   }
-    // }
 
     if (Object.keys(newErrors).length === 0) {
       // Send user's input credentials to the API
@@ -67,6 +44,7 @@ const SigninSection = () => {
 
         .then((jsonData) => {
           console.log("Received JSON data:", jsonData); // Display JSON data in console
+          login(); // Call the login function if authentication is successful
           navigate("/welcome"); // Navigate to the welcome page
         })
         .catch((error) => {

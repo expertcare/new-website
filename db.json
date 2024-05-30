@@ -1,11 +1,6 @@
 {
   "todoItems": [
     {
-      "id": "dda2",
-      "name": "Create a JSON Server",
-      "dueDate": "2024-05-21"
-    },
-    {
       "name": "Fetch data from Json server ",
       "dueDate": "2024-05-21",
       "id": "4131"
@@ -14,6 +9,11 @@
       "name": "Host your website on free platforms like github or firebase",
       "dueDate": "2024-05-27",
       "id": "e73b"
+    },
+    {
+      "id": "c85b",
+      "name": "Make a proper authentication",
+      "dueDate": "2024-05-29"
     }
   ],
   "users": [
@@ -59,6 +59,15 @@
       "message": "HEllo"
     }
   ],
-  "signupData": [],
+  "signupData": [
+    {
+      "id": "9be4",
+      "name": "Shubham",
+      "email": "test@g.com",
+      "password": "Test@123",
+      "repeatPassword": "Test@123",
+      "agreedToTerms": "on"
+    }
+  ],
   "signinData": []
 }

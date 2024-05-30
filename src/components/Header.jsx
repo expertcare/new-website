@@ -1,7 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
-const Header = () => {
+const Header = ({ logout }) => {
+  const handleLogout = () => {
+    // Call the logout function passed as a prop
+    logout();
+  };
   return (
     <>
       {/* <!-- Header comment --> */}
@@ -83,7 +87,7 @@ const Header = () => {
               </div>
             </div>
             <div className="navbar-nav ms-auto header-btn">
-              <Link to="/signin" className="btn my-btn2 ">
+              <Link to="/signin" className="btn my-btn2" onClick={handleLogout}>
                 Sign out
               </Link>
             </div>
