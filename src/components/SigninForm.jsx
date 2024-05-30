@@ -45,7 +45,7 @@ const SigninSection = ({ login }) => {
         .then((jsonData) => {
           console.log("Received JSON data:", jsonData); // Display JSON data in console
           login(); // Call the login function if authentication is successful
-          navigate("/welcome"); // Navigate to the welcome page
+          navigate("/home"); // Navigate to the home page
         })
         .catch((error) => {
           // Handle any errors
@@ -89,11 +89,6 @@ const SigninSection = ({ login }) => {
                             onChange={handleChange}
                             required
                           />
-                          {/* {errors.username && (
-                            <div className="invalid-feedback">
-                              {errors.username}
-                            </div>
-                          )} */}
                         </div>
                       </div>
                       {/* Password field */}
@@ -110,11 +105,6 @@ const SigninSection = ({ login }) => {
                             onChange={handleChange}
                             required
                           />
-                          {/* {errors.password && (
-                            <div className="invalid-feedback">
-                              {errors.password}
-                            </div>
-                          )} */}
                         </div>
                       </div>
                       {/* Remember me checkbox */}

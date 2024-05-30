@@ -17,9 +17,9 @@ const Sidebar = () => {
         <div className="offcanvas-header">
           <a className="sidebar-brand" href="#!">
             <img
-              src="https://seeklogo.com/images/T/the-project-logo-6082FFB8D5-seeklogo.com.png"
+              src="https://rajrajhans.com/static/99e4a225dd2b10d50d9f3002d228ff6b/c1b63/post-13-2.png"
               alt="BootstrapBrain Logo"
-              width="95"
+              width="175"
               height="65"
             />
           </a>
@@ -47,10 +47,9 @@ const Sidebar = () => {
                 role="button"
                 aria-expanded="true"
                 aria-controls="dashboardExamples"
-                // onClick={() => handleTabClick("Home")}
               >
                 <div className="nav-link-icon text-primary">
-                  <i className="bi bi-house-gear"></i>
+                  <i className="fa-solid fa-house"></i>
                 </div>
                 <span className="nav-link-text fw-bold">Dashboards</span>
               </a>
@@ -63,7 +62,7 @@ const Sidebar = () => {
                       to="/dashboard"
                     >
                       <div className="nav-link-icon text-primary-emphasis">
-                        <i className="bi bi-arrow-right-short"></i>
+                        <i className="fa-solid fa-arrow-right"></i>
                       </div>
                       <span className="nav-link-text">My Dashboard</span>
                     </Link>
@@ -87,7 +86,7 @@ const Sidebar = () => {
                 aria-controls="pageExamples"
               >
                 <div className="nav-link-icon text-danger">
-                  <i className="bi bi-folder"></i>
+                  <i className="fa-regular fa-folder"></i>
                 </div>
                 <span className="nav-link-text fw-bold">Projects</span>
               </a>
@@ -100,7 +99,7 @@ const Sidebar = () => {
                       to="/todo"
                     >
                       <div className="nav-link-icon text-danger-emphasis">
-                        <i className="bi bi-arrow-right-short"></i>
+                        <i className="fa-solid fa-arrow-right"></i>
                       </div>
                       <span className="nav-link-text">To Do App</span>
                     </Link>
@@ -112,7 +111,7 @@ const Sidebar = () => {
                       to="/news"
                     >
                       <div className="nav-link-icon text-danger-emphasis">
-                        <i className="bi bi-arrow-right-short"></i>
+                        <i className="fa-solid fa-arrow-right"></i>
                       </div>
                       <span className="nav-link-text">News App</span>
                     </Link>
@@ -124,7 +123,7 @@ const Sidebar = () => {
                       to="/users-data"
                     >
                       <div className="nav-link-icon text-danger-emphasis">
-                        <i className="bi bi-arrow-right-short"></i>
+                        <i className="fa-solid fa-arrow-right"></i>
                       </div>
                       <span className="nav-link-text">Users CRUD Demo</span>
                     </Link>
@@ -136,7 +135,7 @@ const Sidebar = () => {
                       to="/weather"
                     >
                       <div className="nav-link-icon text-danger-emphasis">
-                        <i className="bi bi-arrow-right-short"></i>
+                        <i className="fa-solid fa-arrow-right"></i>
                       </div>
                       <span className="nav-link-text">Kolhapur Weather</span>
                     </Link>
@@ -157,7 +156,7 @@ const Sidebar = () => {
                 aria-controls="authExamples"
               >
                 <div className="nav-link-icon text-success">
-                  <i className="bi bi-gear"></i>
+                  <i className="fa-solid fa-gear"></i>
                 </div>
                 <span className="nav-link-text fw-bold">Authentication</span>
               </a>
@@ -170,7 +169,7 @@ const Sidebar = () => {
                       href="/signin"
                     >
                       <div className="nav-link-icon text-success-emphasis">
-                        <i className="bi bi-arrow-right-short"></i>
+                        <i className="fa-solid fa-arrow-right"></i>
                       </div>
                       <span className="nav-link-text">Sign In</span>
                     </a>
@@ -182,7 +181,7 @@ const Sidebar = () => {
                       href="signup"
                     >
                       <div className="nav-link-icon text-success-emphasis">
-                        <i className="bi bi-arrow-right-short"></i>
+                        <i className="fa-solid fa-arrow-right"></i>
                       </div>
                       <span className="nav-link-text">Sign Up</span>
                     </a>

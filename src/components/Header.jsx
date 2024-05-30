@@ -14,11 +14,11 @@ const Header = ({ logout }) => {
           <div className="container">
             <a className="navbar-brand d-sm-none" href="#!">
               <img
-                src="https://seeklogo.com/images/T/the-project-logo-6082FFB8D5-seeklogo.com.png"
+                src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png"
                 alt="BootstrapBrain Logo"
-                width="95"
-                height="65"
+                width="55"
               />
+              React
             </a>
             <button
               className="navbar-toggler"
