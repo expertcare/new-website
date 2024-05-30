@@ -76,17 +76,30 @@ const Header = ({ logout }) => {
                   </li>
                   <li className="nav-item fw-medium ">
                     <Link
-                      className="nav-link"
+                      className="nav-link "
                       aria-current="page"
                       to="/contact"
                     >
                       Contact
                     </Link>
                   </li>
+                  <li className="nav-item fw-medium d-sm-none">
+                    {" "}
+                    {/* Only display on small screens */}
+                    <Link
+                      to="/signin"
+                      className="btn my-btn2 w-50 nav-link"
+                      onClick={handleLogout}
+                    >
+                      Sign out
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </div>
-            <div className="navbar-nav ms-auto header-btn">
+            <div className="navbar-nav ms-auto header-btn d-none d-sm-flex">
+              {" "}
+              {/* Hide on small screens */}
               <Link to="/signin" className="btn my-btn2" onClick={handleLogout}>
                 Sign out
               </Link>
