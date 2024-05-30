@@ -60,7 +60,7 @@ const Header = ({ logout }) => {
                       <i className="bi-filter-left fs-3 lh-1"></i>
                     </a>
                   </li>
-                  <li className="nav-item">
+                  <li className="nav-item" data-bs-dismiss="offcanvas">
                     <Link
                       className="nav-link active fw-medium"
                       aria-current="page"
@@ -69,12 +69,18 @@ const Header = ({ logout }) => {
                       Home
                     </Link>
                   </li>
-                  <li className="nav-item fw-medium">
+                  <li
+                    className="nav-item fw-medium"
+                    data-bs-dismiss="offcanvas"
+                  >
                     <Link className="nav-link" aria-current="page" to="/about">
                       About
                     </Link>
                   </li>
-                  <li className="nav-item fw-medium ">
+                  <li
+                    className="nav-item fw-medium "
+                    data-bs-dismiss="offcanvas"
+                  >
                     <Link
                       className="nav-link "
                       aria-current="page"

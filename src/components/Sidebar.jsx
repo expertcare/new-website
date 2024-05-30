@@ -39,7 +39,7 @@ const Sidebar = () => {
           {/* main list */}
           <ul className="navbar-nav">
             {/* List of Dashboard  */}
-            <li className="nav-item">
+            <li className="nav-item" data-bs-dismiss="offcanvas">
               <a
                 className="nav-link p-3 active bg-light rounded"
                 data-bs-toggle="collapse"
@@ -93,7 +93,7 @@ const Sidebar = () => {
               </a>
               <div className="collapse" id="pageExamples">
                 <ul className="nav flex-column ms-4">
-                  <li className="nav-item">
+                  <li className="nav-item" data-bs-dismiss="offcanvas">
                     <Link
                       className="nav-link link-secondary"
                       aria-current="page"
@@ -105,7 +105,7 @@ const Sidebar = () => {
                       <span className="nav-link-text">To Do App</span>
                     </Link>
                   </li>
-                  <li className="nav-item">
+                  <li className="nav-item" data-bs-dismiss="offcanvas">
                     <Link
                       className="nav-link link-secondary"
                       aria-current="page"
@@ -117,7 +117,7 @@ const Sidebar = () => {
                       <span className="nav-link-text">News App</span>
                     </Link>
                   </li>
-                  <li className="nav-item">
+                  <li className="nav-item" data-bs-dismiss="offcanvas">
                     <Link
                       className="nav-link link-secondary"
                       aria-current="page"
@@ -129,7 +129,7 @@ const Sidebar = () => {
                       <span className="nav-link-text">Users CRUD Demo</span>
                     </Link>
                   </li>
-                  <li className="nav-item">
+                  <li className="nav-item" data-bs-dismiss="offcanvas">
                     <Link
                       className="nav-link link-secondary"
                       aria-current="page"
