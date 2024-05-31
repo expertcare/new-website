@@ -62,7 +62,7 @@ const Sidebar = () => {
                       to="/dashboard"
                     >
                       <div className="nav-link-icon text-primary-emphasis">
-                        <i className="fa-solid fa-arrow-right"></i>
+                        <i class="fa-solid fa-laptop"></i>
                       </div>
                       <span className="nav-link-text">My Dashboard</span>
                     </Link>
@@ -98,8 +98,8 @@ const Sidebar = () => {
                       aria-current="page"
                       to="/todo"
                     >
-                      <div className="nav-link-icon text-danger-emphasis">
-                        <i className="fa-solid fa-arrow-right"></i>
+                      <div className="nav-link-icon text-success">
+                        <i class="fa-solid fa-calendar-check"></i>
                       </div>
                       <span className="nav-link-text">To Do App</span>
                     </Link>
@@ -111,7 +111,7 @@ const Sidebar = () => {
                       to="/news"
                     >
                       <div className="nav-link-icon text-danger-emphasis">
-                        <i className="fa-solid fa-arrow-right"></i>
+                        <i class="fa-solid fa-newspaper"></i>
                       </div>
                       <span className="nav-link-text">News App</span>
                     </Link>
@@ -123,7 +123,7 @@ const Sidebar = () => {
                       to="/users-data"
                     >
                       <div className="nav-link-icon text-danger-emphasis">
-                        <i className="fa-solid fa-arrow-right"></i>
+                        <i className="fa-solid fa-users"></i>
                       </div>
                       <span className="nav-link-text">Users CRUD Demo</span>
                     </Link>
@@ -134,8 +134,8 @@ const Sidebar = () => {
                       aria-current="page"
                       to="/weather"
                     >
-                      <div className="nav-link-icon text-danger-emphasis">
-                        <i className="fa-solid fa-arrow-right"></i>
+                      <div className="nav-link-icon text-primary">
+                        <i className="fa-solid fa-cloud"></i>
                       </div>
                       <span className="nav-link-text">Kolhapur Weather</span>
                     </Link>
@@ -169,7 +169,7 @@ const Sidebar = () => {
                       href="/signin"
                     >
                       <div className="nav-link-icon text-success-emphasis">
-                        <i className="fa-solid fa-arrow-right"></i>
+                        <i class="fa-solid fa-right-to-bracket"></i>
                       </div>
                       <span className="nav-link-text">Sign In</span>
                     </a>
@@ -181,7 +181,7 @@ const Sidebar = () => {
                       href="signup"
                     >
                       <div className="nav-link-icon text-success-emphasis">
-                        <i className="fa-solid fa-arrow-right"></i>
+                        <i class="fa-solid fa-user-plus"></i>
                       </div>
                       <span className="nav-link-text">Sign Up</span>
                     </a>
